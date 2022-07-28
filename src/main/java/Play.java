@@ -3,7 +3,7 @@
 public class Play {
 	public static void main(String[] args) {
 		// Creates board
-		Board gameOne = new Board(9,5);
+		Board gameOne = new Board(10,10);
 		// Adds ladders to board
 		gameOne.getBoard(2,3).setDelta(4);
 		gameOne.getBoard(8,0).setDelta(8);
