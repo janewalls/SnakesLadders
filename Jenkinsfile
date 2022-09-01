@@ -5,7 +5,7 @@ pipeline{
   stage('maven install') {
     steps {
       // if jenkinsfile out of code base it git clone here
-      withMaven(globalMavenSettingsConfig: 'null', jdk: 'null', maven: 'Maven3', mavenSettingsConfig: 'null') {
+      withMaven(maven: 'Maven3') {
         sh 'mvn clean install'
       }
     }
