@@ -1,4 +1,5 @@
 //2598002w - Jane Walls - 2598002w@student.gla.ac.uk
+// Comment to practice jenkins
 
 public class Square {
 	private int position;
