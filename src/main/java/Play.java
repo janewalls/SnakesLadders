@@ -20,14 +20,14 @@ public class Play {
 		gameOne.addPlayer(playerJ);
 		gameOne.addPlayer(playerA);
 		gameOne.addPlayer(playerB);
-		System.out.println("Lets start the game!");
+		System.out.println("Are you ready\nLets start the game!");
 		System.out.println(gameOne);
 		// Starts game
 		gameOne.takeTurns(); 
 		
 		System.out.println(); // separates games
 
-		
+		// Second game, adding snakes and ladders
 		Board gameTwo = new Board(10,10);
 		gameTwo.getBoard(9,8).setDelta(12);
 		gameTwo.getBoard(8,0).setDelta(8);
@@ -35,6 +35,7 @@ public class Play {
 		gameTwo.getBoard(7,7).setDelta(-9);
 		gameTwo.getBoard(0,8).setDelta(-15);
 		gameTwo.getBoard(5,1).setDelta(-10);
+		// Adding players
 		Player playerT = new Player('T');
 		HumanPlayer playerS = new HumanPlayer('S');
 		gameTwo.addPlayer(playerT);
