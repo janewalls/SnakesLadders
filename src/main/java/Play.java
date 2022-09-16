@@ -35,6 +35,7 @@ public class Play {
 		gameTwo.getBoard(7,7).setDelta(-9);
 		gameTwo.getBoard(0,8).setDelta(-15);
 		gameTwo.getBoard(5,1).setDelta(-10);
+		// Adding players
 		Player playerT = new Player('T');
 		HumanPlayer playerS = new HumanPlayer('S');
 		gameTwo.addPlayer(playerT);
