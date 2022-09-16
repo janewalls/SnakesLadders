@@ -1,4 +1,4 @@
-# SnakesLadders
+# SnakesLadders 
 
 ### Play the classic board game against a computer!
 
@@ -6,6 +6,7 @@ This is a test project that was developed when I started learning Java, I am now
 
 To run, use main method in `Play` class
 
-This is played on the command line, and the number you choose has to be between 1 - 6 (like a normal die).
+This is played on the command line, and the number you choose has to be between 1 - 6 (like a normal die). You choose the number yourself and you can choose to play the computer.
 
 Created March 2020 for a Java University project
+
