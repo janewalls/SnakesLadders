@@ -20,6 +20,7 @@ public class Play {
 		gameOne.addPlayer(playerJ);
 		gameOne.addPlayer(playerA);
 		gameOne.addPlayer(playerB);
+		System.out.println("Lets start the game!");
 		System.out.println(gameOne);
 		// Starts game
 		gameOne.takeTurns(); 
