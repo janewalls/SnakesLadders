@@ -27,7 +27,7 @@ public class Play {
 		
 		System.out.println(); // separates games
 
-		
+		// Second game, adding snakes and ladders
 		Board gameTwo = new Board(10,10);
 		gameTwo.getBoard(9,8).setDelta(12);
 		gameTwo.getBoard(8,0).setDelta(8);
