@@ -37,7 +37,7 @@ public class Player {
 		return "" + name; // returns player char
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) { // Play here to only run on the with both computer players
 		Player playerJ = new Player('J'); // creates players
 		Player playerA = new Player('A');
 		Square sqrOne = new Square(1); // creates square
