@@ -1,6 +1,6 @@
 # SnakesLadders 
 
-### Play the classic board game!
+### Play the classic board game with a computer and/or friends!
 
 This is a test project that was developed when I started learning Java
 
