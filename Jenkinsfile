@@ -4,6 +4,12 @@ pipeline{
   stages {
   stage('sanity checks') {
       steps {
+        sh "echo ${ghprbActualCommit}"
+        sh "echo ${env.ghprbActualCommit}"
+        sh "echo ${sha1}"
+        sh "echo ${env.sha1}"
+        sh "echo ${HEAD_BRANCH}"
+        sh "echo ${env.HEAD_BRANCH}"
         sh 'git branch'
         sh 'git status'
         sh 'git log'
