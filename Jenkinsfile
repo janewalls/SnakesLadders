@@ -5,6 +5,7 @@ pipeline{
   stage('sanity checks') {
       steps {
         cleanWs() // clean jenkins so it re-clones
+        checkout scm // re-clone/re-download
         sh "echo ${ghprbActualCommit}"
         sh "echo ${ghprbSourceBranch}"
         sh 'git branch'
