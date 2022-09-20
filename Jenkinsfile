@@ -5,6 +5,8 @@ pipeline{
   stage('sanity checks') {
       steps {
         sh 'git branch'
+        sh 'git checkout ${env.GIT_BRANCH}'
+        sh 'git branch'
         sh 'git status'
         sh 'git log'
       }
