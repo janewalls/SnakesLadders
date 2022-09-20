@@ -5,8 +5,6 @@ pipeline{
   stage('sanity checks') {
       steps {
         sh 'git branch'
-        sh "git checkout $CHANGE_BRANCH"
-        sh 'git branch'
         sh 'git status'
         sh 'git log'
       }
