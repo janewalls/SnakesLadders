@@ -1,4 +1,4 @@
-# Hello everyone - SnakesLadders 
+# SnakesLadders 
 
 ### Play the classic board game against a computer!
 
