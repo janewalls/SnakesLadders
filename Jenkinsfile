@@ -8,6 +8,7 @@ pipeline{
         sh 'git status'
         sh 'git log'
       }
+  }
   stage('maven install') {
     steps {
       // if jenkinsfile out of code base it git clone here
