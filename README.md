@@ -8,5 +8,6 @@ To run use main method in `Play` class, you can choose to add as many players as
 
 This is played on the command line, and the number you choose has to be between 1 - 6 (like a normal die).
 
+This project is currently being used to learn and test my Jenkins pipeline
 
 Created March 2020 for a University project
