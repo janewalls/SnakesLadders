@@ -12,11 +12,11 @@ pipeline{
         sh 'git status'
       }
   }
-  stage('maven install') {
+  stage('Build Project') {
     steps {
       // if jenkinsfile out of code base it git clone here
       withMaven(maven: 'Maven3') {
-        sh 'mvn clean install'
+        sh 'mvn clean install -DskipTests'
       }
     }
   }
