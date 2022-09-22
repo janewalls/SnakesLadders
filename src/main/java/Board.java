@@ -1,7 +1,7 @@
 //2598002w - Jane Walls - 2598002w@student.gla.ac.uk
 
 public class Board {
-	private int row;
+	private int row
 	private int column;
 	int playerCount = 0;
 	private Player[] allPlayers = new Player[2];
