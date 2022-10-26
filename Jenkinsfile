@@ -30,9 +30,10 @@ pipeline{
         sh 'mkdir --parents dcover'
         sh 'wget "$DB_RELEASE_URL" --output-document dcover/dcover.zip --quiet'
         sh 'unzip -o dcover/dcover.zip -d dcover'
-        sh 'DCOVER_SCRIPT_LOCATION="dcover/dcover"'
-
-        sh '"$DCOVER_SCRIPT_LOCATION" --version'
+        sh '''
+            DCOVER_SCRIPT_LOCATION="dcover/dcover"
+            "$DCOVER_SCRIPT_LOCATION" --version
+            '''
       }
     }
   
