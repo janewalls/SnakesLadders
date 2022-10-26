@@ -1,6 +1,10 @@
 pipeline{
   agent any
-  
+
+  environment {
+      DB_RELEASE_URL = credentials('diffblue-cover-release-url')
+  }
+
   stages {
   stage('sanity checks') {
       steps {
@@ -20,6 +24,19 @@ pipeline{
       }
     }
   }
+
+  stage('dcover create tests') {
+      steps {
+        sh '''
+            echo "Get and unzip dcover jars into directory dcover, store dcover script location for later use"
+            mkdir --parents dcover
+            wget "$DB_RELEASE_URL" --output-document dcover/dcover.zip --quiet
+            unzip -o dcover/dcover.zip -d dcover
+            DCOVER_SCRIPT_LOCATION="dcover/dcover"
+        '''
+        sh '"$DCOVER_SCRIPT_LOCATION" --version'
+      }
+
   
   }
 }
