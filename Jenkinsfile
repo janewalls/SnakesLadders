@@ -27,13 +27,11 @@ pipeline{
 
   stage('dcover create tests') {
       steps {
-        sh '''
-            echo "Get and unzip dcover jars into directory dcover, store dcover script location for later use"
-            mkdir --parents dcover
-            wget "$DB_RELEASE_URL" --output-document dcover/dcover.zip --quiet
-            unzip -o dcover/dcover.zip -d dcover
-            DCOVER_SCRIPT_LOCATION="dcover/dcover"
-        '''
+        sh 'mkdir --parents dcover'
+        sh 'wget "$DB_RELEASE_URL" --output-document dcover/dcover.zip --quiet'
+        sh 'unzip -o dcover/dcover.zip -d dcover'
+        sh 'DCOVER_SCRIPT_LOCATION="dcover/dcover"'
+
         sh '"$DCOVER_SCRIPT_LOCATION" --version'
       }
     }
