@@ -1,4 +1,4 @@
-# SnakesLadders 
+# Welcome to the Snakes and Ladders 
 
 ### Play the classic board game with a computer and/or friends!
 
